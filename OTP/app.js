@@ -30,7 +30,7 @@ app.get('/', (req, res) => {
 
 
 app.post('/verify', (req, res) => {
-  let mobile_number = req.body.number //"+6587539423"
+  let mobile_number = req.body.number //"+65"
   randomN_otp = Math.floor(Math.random() * 90000) + 10000;
   console.log(randomN_otp, mobile_number)
 
@@ -67,8 +67,6 @@ app.post('/verifying', (req, res) => {
     res.send('wrong code!')
   }
 }) 
-
-
 
 
 app.listen(3003, () => {
