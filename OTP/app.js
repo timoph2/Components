@@ -30,8 +30,8 @@ app.get('/', (req, res) => {
 
 
 app.post('/verify', (req, res) => {
-  let mobile_number = req.body.number //"+65"
-  randomN_otp = Math.floor(Math.random() * 90000) + 10000;
+  let mobile_number = req.body.number //+65
+  randomN_otp = Math.floor(Math.random() * 90000) + 10000; //random 5 digit code
   console.log(randomN_otp, mobile_number)
 
   
